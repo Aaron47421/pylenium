@@ -1,0 +1,6 @@
+@echo off
+
+echo installed packages...
+pip install -r requirements.txt
+echo installed...
+pause
