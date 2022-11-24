@@ -26,3 +26,4 @@ class newbrowser:
     def getdriver(self):
         return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.options)
         
+        
