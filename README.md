@@ -14,6 +14,9 @@ here's an example.
 ```
 from pylenium.chrome import newbrowser
 
-driver = newbrowser(headless=False, detached=True)
+app = newbrowser(headless=False, detached=True)
+options = app.options
+options.add_argument("--headless")
+driver = app.getdriver()
 driver.get("https://google.com")
 ```
